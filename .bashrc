@@ -1,3 +1,6 @@
+# This is the config file to be applied everytime you run shell (like bash, zsh)
+# If you want to apply config everytime terminal is opened, go to .bash_profile
+
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$(brew --prefix homebrew/core/php@7.2)/bin:$PATH"
 
