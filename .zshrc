@@ -149,12 +149,19 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 # ==========================================================================================================================================
 
-echo "bash kara ichido zsh ni utsutte sonoato bash ni modotta ze!"
-echo "2019/09/28 made bash wo tsukatte itaze!"
-echo "2019/09/28 kara zsh wo tsukau koto ni shitaze!!"
+echo "2019/09/28 stop using bash"
+echo "2019/09/28 start using zsh and tmux"
+echo "2020/01/09 stop using tmux"
 echo "anounced from .zshrc"
+echo "Shell level: ${SHLVL}"
 
-echo "Shell level is ${SHLVL}"
-if [ $SHLVL = 1 ]; then
-    tmux
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+
+# for specific project
+if [ -f ~/.specific_env ]; then
+    source ~/.specific_env
 fi
+source $(brew --prefix nvm)/nvm.sh
+
+echo "This command line is using .zshrc"

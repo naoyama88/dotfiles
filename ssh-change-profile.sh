@@ -12,3 +12,5 @@ echo -ne "\033]1337;SetProfile=$@\a"
 
 # set profile(default)
 echo -ne "\033]1337;SetProfile=Default\a"
+
+echo "echo from ssh-change-profile.sh"

@@ -13,6 +13,7 @@ alias vi='vim'
 alias e='emacs'
 # reference https://dev.classmethod.jp/tool/iterm2-ssh-change-profile/
 alias ssh='~/bin/ssh-change-profile.sh'
+alias hsg=' history | grep '
 
 # reference https://qiita.com/caad1229/items/6d71d84933c8a87af0c4
 # -----------------------------------------------------------------------
@@ -41,3 +42,9 @@ function promps {
 }
 promps
 # -----------------------------------------------------------------------
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+echo "This command line is using .bashrc"

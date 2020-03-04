@@ -13,3 +13,6 @@ fi
 export PATH="$HOME/.rbenv/bin:$PATH"
 
 eval "$(rbenv init -)"
+source $(brew --prefix nvm)/nvm.sh
+
+echo "This command line is using .bash_profile"
