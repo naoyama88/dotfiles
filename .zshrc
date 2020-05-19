@@ -165,3 +165,5 @@ fi
 source $(brew --prefix nvm)/nvm.sh
 
 echo "This command line is using .zshrc"
+
+source ~/.bash_aliases
